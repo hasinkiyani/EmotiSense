@@ -1,0 +1,8 @@
+conda create -n emotion_env python=3.10
+conda activate emotion_env
+pip install streamlit transformers torch matplotlib
+python -c "import streamlit, torch, transformers, matplotlib; print('All packages loaded!')"
+
+streamlit run streamlit_app.py
+conda activate emotion_env
+conda install scikit-learn seaborn
